@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <tilte>Document</tilte>
+    <link rel-"stylesheet" href="main.css">
+</head>
+<body>
+    <div class="alert-box" id="alert">
+        <p class=""title1">알림창임</p>
+        <button id="close">닫기</button>
+        <button onclick="알림창열기('none');"닫기</button> 
+    </div>
+    <button onclick="document.getElementById('alert').style.display='block';">버튼</button>
+    <button onclick="document.getElementById('alert').style.display ='none';">닫기</button>
+    <h1 id="hello">안녕하세요</h1>
+
+    <script>
+        doucment.getElementById('close').addEventListener('click',function(){doucment.getElementById('alert').style.display = 'none';
+    });
+
+        document.getElementById('hello').innerHTML = '안녕';
+        document.getElementById('hello').style.fontsize = "16px";
+        function 알림창열기(){
+            document.getElementById('alert').style.display = 'block';
+        } # 긴 코드 축약
+
+        
+        function 알림창닫기(){
+            document.getElementById('alert').style.display ='none';
+        }
+
+        function 아이디알림창(){
+            doucment.getElementByClassName('title1')[0].innerHTML = '아이디입력하셈';
+            doucment.getElementById('alaert').style.display = 'blcok';
+        }
+
+    </script>
+</body>
+</html>
